@@ -1,0 +1,10 @@
+.entete { display: flex; justify-content: flex-start
+ } 
+#hotels {text-align: center;}
+.blockhotels {display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 5%;}
+#myTab {display: flex; justify-content: center;}
+.footer {display: flex; justify-content: space-around;
+}
