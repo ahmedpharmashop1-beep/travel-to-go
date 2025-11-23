@@ -10,9 +10,8 @@
 </head>
 <body>
     <header class="entete">
-        <img width="20%" src="travel to go logo.png" alt="travel logo">
- 
-       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <img id="logo" width="20%" src="travel to go logo.png" alt="travel logo">
+       <nav id="nav1" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,72 +23,123 @@
           <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Hotels</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Voyages</a>
+          <a class="nav-link" href="#Destinations">Destinations</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="#">Circuits & Excursions</a>
+          <a class="nav-link" href="#Circuits">Circuits</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="#">Billeterie</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#">Promotions</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#Contact">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
     </header>
     <br>
-    <br>
-    <br>
     <main>
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="suisse.jpg" class="d-block w-100" alt="suisse">
-    </div>
-    <div class="carousel-item">
-      <img src="rio de janeiro brasil.jpg" class="d-block w-100" alt="brasil">
-    </div>
-    <div class="carousel-item">
-      <img src="China.jpg" class="d-block w-100" alt="china">
+    <section class="Heros"> <!-- A regler -->
+      <div class="first">
+      <img src="go to travel.jpeg" width="100%" alt="voyager">
+      </div>
+      <div class="two">
+      <h1>Let's Go Travel Around The World</h1>
+      <h5>"Comme tout ce qui compte dans la vie, un beau voyage est une oeuvre d'art"</h3>
+      <button id="gototravel">Go To Travel</button>
+      </div>
+    </section>
+    <section>
+      <h1>Destinations</h1>
+      <div class="Dest1">
+         <div class="col-md-4">
+        <div class="card">
+          <img src="suisse.jpg" class="suisse">
+          <div class="card-body">
+            <h5 class="card-title">Suisse</h5>
+            <p class="card-text">La Suisse est un pays montagneux d'Europe centrale abritant de nombreux lacs et villages, ainsi que les hauts sommets des Alpes. Les villes du pays comprennent des quartiers médiévaux et des monuments comme la Zytglogge (tour-clocher) de Berne, la capitale, et le pont en bois de la chapelle de Lucerne. Le pays est également réputé pour ses stations de ski et ses sentiers de randonnée. Les industries clés sont les secteurs bancaire et financier, et les montres et le chocolat suisses sont mondialement célèbres.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="China.jpg" class="China">
+          <div class="card-body">
+            <h5 class="card-title">China</h5>
+            <p class="card-text">La Chine est un pays très peuplé d’Asie de l’est. Son territoire immense présente des paysages variés : prairies, déserts, montagnes, lacs, rivières et plus de 14 000 km de littoral. Pékin, la capitale à l’architecture moderne, conserve également des sites historiques, comme le palais de la Cité interdite et la place Tian Anmen. Shanghaï est l'un des plus grands centres financiers mondiaux et comporte de nombreux gratte-ciels. L’emblématique Grande Muraille de Chine partage le nord du pays d’est en ouest</p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card">
+          <img src="rio de janeiro brasil.jpg" class="brasil">
+          <div class="card-body">
+            <h5 class="card-title">brasil</h5>
+            <p class="card-text">Le Brésil, vaste pays d'Amérique du Sud, s'étend du bassin amazonien au nord à des vignobles et aux chutes d'Iguaçu au sud. La ville de Rio de Janeiro, caractérisée par sa statue du Christ Rédempteur de 38 mètres de haut située au sommet du Corcovado, est réputée pour ses plages très fréquentées de Copacabana et d'Ipanema, ainsi que pour son énorme carnaval animé, avec défilés de chars, costumes flamboyants, et musique et danse samba.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  <section class="py-5 bg-light" id="tours">
+  <div class="container">
+    <h2 class="text-center mb-5">Nos Circuits Organisés</h2>
+
+    <div class="accordion" id="accordionTours">
+
+      <!-- Tour 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tour1">
+            Circuit Europe – 7 jours
+          </button>
+        </h2>
+        <div id="tour1" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            Explorez les plus belles villes d’Europe : Rome, Paris, Berne et plus encore.
+            <br><a target="_blank" href="https://www.touteleurope.eu/societe/vacances-en-europe-cinq-destinations-d-exception-a-decouvrir-sans-quitter-l-union/" class="btn btn-primary btn-sm mt-2">Voir les détails</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tour 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#tour2">
+            Circuit d’Asie 10 jours
+          </button>
+        </h2>
+        <div id="tour2" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Explorez les plus belles pays d’Asie : le Japan, la Chine pour decourvir des nouvelles traditions.
+            <br><a href="#" class="btn btn-primary btn-sm mt-2">Voir les détails</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tour 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#tour3">
+            Espagne – 06 jours
+          </button>
+        </h2>
+        <div id="tour3" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Partez à la découverte de l'Espagne.
+            <br><a href="#" class="btn btn-primary btn-sm mt-2">Voir les détails</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+</section>
 </div>
-<br>
-<br>
-<br>
-<div>
-  <h1 id="hotels">Hotels</h1>
-  <br>
-  <br>
+<div class="divers">
   <!-- Nav tabs -->
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Tunis</button>
+    <button class="nav-link active" id="Tunis" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Tunis</button>
   </li>
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Gammarth</button>
@@ -126,95 +176,88 @@
 </div>
 <Section class="blockhotels">
 <div class="card" style="width: 18rem;">
-  <img src="la cigale.jpg" class="card-img-top" alt="la cigale">
+  <img src="la cigale.jpg" class="La Cigale" alt="La Cigale">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="La Cigale">La Cigale</h5>
+    <p class="La Cigale">La Cigale Tabarka Hôtel – Thalasso & Spa – Golf est l’endroit idéal pour une escapade en pleine nature ou en bord de mer pour les familles, les couples, les passionnés de sport, les voyageurs d’affaires et les retraités.</p>
+    <a href="https://www.lacigaletabarka.com/" target="_blank" class="btn btn-primary">Go Visit It</a>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
-  <img src="royal tulip.jpg" class="card-img-top" alt="royal tulip">
+  <img src="royal tulip.jpg" class="Royal Tulip" alt="Royal Tulip">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="Royal Tulip">Royal Tulip</h5>
+    <p class="Royal Tulip">L’hôtel Royal Tulip est implanté au cœur d’une montagne tapissée de maquis et de plantes odorantes surplombant la mer méditerranée et offrant une vue exceptionnelle sur le Golfe de la ville de Tunis. C'est un hôtel de rêve au cœur d’un site thermal millénaire.</p>
+    <a href="https://royal-tulip-korbous.goldentulip.com/fr-fr/?sr=SEO_GOOGLE" target="_blank" class="btn btn-primary">Go Visit It</a>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
-  <img src="oceana.jpg" class="card-img-top" alt="oceana">
+  <img src="oceana.jpg" class="Oceana" alt="Oceana">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">Oceana</h5>
+    <p class="card-text">Petit havre de paix, l'hôtel  Oceana & Spa est la meilleure escale à choisir pour un séjour de détente et de plaisirs, au bord d’une plage des plus belles de la région de l’une des villes les plus huppées de la Tunisie, Hammamet.
+
+    </p>
+    <a href="https://hoteloceanasuites.tn/" target="_blank" class="btn btn-primary">Go Visit It</a>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
-  <img src="royal azur.jpg" class="card-img-top" alt="royal azur">
+  <img src="royal azur.jpg" class="Royal Azur" alt="Royal Azur">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="residence douz.jpg" class="card-img-top" alt="residence douz">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="badira.jpg" class="card-img-top" alt="badira">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="hasdrubal.jpg" class="card-img-top" alt="hasdrubal">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="marhabe thalaso.jpg" class="card-img-top" alt="marhabe thalaso">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="Royal Azur">Royal Azur</h5>Situé à proximité de la médina de Hammamet, l'Hôtel Royal Azur Thalassa offre une expérience culturelle tunisienne unique.
+Découvrez des œuvres artistiques renommées et contemplez le coucher de soleil depuis notre piscine à débordement.</p>
+    <a href="https://www.hotelroyalazur.com/" target="_blank" class="btn btn-primary">Go Visit It</a>
   </div>
 </div>
 </Section>
+<section class="py-5" id="contact">
+  <div class="container">
+    <h2 class="text-center mb-5">Contactez-nous</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nom complet</label>
+            <input type="text" class="form-control" placeholder="Votre nom">
+          </div>
 
+          <div class="mb-3">
+            <label class="form-label">Adresse email</label>
+            <input type="email" class="form-control" placeholder="email@example.com">
+          </div>
 
+          <div class="mb-3">
+            <label class="form-label">Destination d'intérêt</label>
+            <select class="form-select">
+              <option>Dubai</option>
+              <option>Paris</option>
+              <option>Tokyo</option>
+              <option>New York</option>
+            </select>
+          </div>
 
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4" placeholder="Votre message"></textarea>
+          </div>
+
+          <button class="btn btn-primary w-100">Envoyer</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
     </main>
-  <br>
-  <br>
-  <br>
     <footer class="footer">
-      <ul>
-          <h5>Adresse</h5>
-          <p>menzah 5</p>
-      </ul>
-      <ul>
-          <h5>Contact</h5>
-          <p>tel : 31313131 </p>
-      </ul>
-      <ul>
-        <h5>Suivez nous</h5>
-        <p> instagram </p>
-
-      </ul>
-
-
+      <p>© 2025 Travel To Go — Tous droits réservés</p>
+  <div>
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+  </div>
     </footer>
-    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
