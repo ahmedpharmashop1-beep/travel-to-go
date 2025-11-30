@@ -1,12 +1,10 @@
-.entete { display: flex; justify-content: space-between;
-}
-.two {
-      align-items: center;
+.entete { display: flex; justify-content: space-between; }
+.two { align-items: center;
       text-align: center;
       color: white;
       text-shadow: 0 2px 8px rgba(0,0,0,0.7);}
-#VisitIt {center}
-.divers {margin-top: 10%;}
+#VisitIt { center }
+.divers { margin-top: 10%; }
 .blockhotels {display: flex; justify-content: center; flex-wrap: wrap;
 gap: 5%;}
 #myTab {display: flex; justify-content: center;}
@@ -17,4 +15,7 @@ font-style: italic;
 font-size: large;
 }
 .Dest1 { display: flex; justify-content: center;
+}
+.first { margin-top: 7%;
+
 }
